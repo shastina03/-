@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>App CSharp Snippet</Title>
+			<Shortcut>AppCS</Shortcut>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+using %НАЗВАНИЕ ПРОЕКТА%.Context;
+using %НАЗВАНИЕ ПРОЕКТА%.Entities;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows;
+
+namespace %НАЗВАНИЕ ПРОЕКТА%
+{
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+        //"User" - название таблицы с клиентами
+        public static User currentUser = null;
+        //"DemoContext" - название контекстного файла
+        public static DemoContext db = new DemoContext();
+    }
+}
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
