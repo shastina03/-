@@ -1,0 +1,1 @@
+Scaffold-DbContext "Server = <название своего сервера(server.wsr)>; Database=<Название своей БД>; User ID=<Ваш ID>; password=<Ваш пароль>;" Microsoft.EntityFrameworkCore.SQLServer -OutputDir Entities
